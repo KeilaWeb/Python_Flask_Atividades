@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}CRUD SQL{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="mb-5">
+                    {% if categoria %}
+                        Editar
+                    {% else %}
+                        Adicionar
+                    {% endif %} Categoria
+                </h1>
+
+                <!-- Exibir mensagem flash - Início -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <div>
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+                <!-- Exibir mensagem flash - Fim -->
+
+                <!-- Formulário categoria -->
+                <form method="post">
+                    <div>
+                        <label for="nome" class="form-label">Nome da categoria</label>
+                        <input type="text" class="form-control" id="nome" name="nome" value="{{ categoria.Nome if categoria else '' }}" required>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <button type="submit" class="btn btn-success">
+                            {% if categoria %} Atualizar {% else %} Salvar {% endif %}
+                        </button>
+                        <a href="{{ url_for('crud_sql') }}" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

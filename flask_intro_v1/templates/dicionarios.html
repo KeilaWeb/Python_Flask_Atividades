@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionario com Flask e Jinja</title>
+</head>
+<body>
+    <h1>Informações do usuario</h1>
+    <p><strong>Nome: </strong> {{ usuario.nome }}</p>
+    <p><strong>Idade: </strong> {{ usuario.idade }}</p>
+    <p><strong>Cidade: </strong> {{ usuario.cidade }}</p>
+    <h2>Intesses:</h2>
+    <ul>
+        {% for interesse in usuario.interesses %}
+            <li>{{ interesse }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

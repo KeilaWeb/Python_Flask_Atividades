@@ -1,0 +1,44 @@
+# Ambiente virtual
+venv/
+.env/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache do pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Diretórios de distribuição
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Arquivos de log
+*.log
+
+# Arquivos de bancos de dados locais
+*.sqlite3
+*.db
+
+# Configurações de IDE e editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de cache do sistema
+*.swp
+*~
+
+# Arquivos de configuração do Flask
+instance/
+config.py
+
+# Configurações específicas do OS
+.DS_Store
+Thumbs.db

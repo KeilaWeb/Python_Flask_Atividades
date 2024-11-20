@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "titulo": "Morre Silvio Santos",
+        "resumo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro incidunt labore ut soluta nostrum, molestias ipsam assumenda. Mollitia consequatur unde corporis iusto cumque labore atque perferendis suscipit molestiae excepturi!"
+    },
+    {
+        "id": 2,
+        "titulo": "Temperatura cai em SC",
+        "resumo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro incidunt labore ut soluta nostrum, molestias ipsam assumenda. Mollitia consequatur unde corporis iusto cumque labore atque perferendis suscipit molestiae excepturi!"
+    },
+    {
+        "id": 3,
+        "titulo": "Nova banda de Rock Matungos faz show em SC",
+        "resumo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro incidunt labore ut soluta nostrum, molestias ipsam assumenda. Mollitia consequatur unde corporis iusto cumque labore atque perferendis suscipit molestiae excepturi!"
+    }
+]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de fluxo com condicionais</title>
+</head>
+<body>
+    <h1>Olá, {{ usuario.nome }}</h1>
+    <p>Idade: {{ usuario.idade }}</p>
+    <p>Cidade: {{ usuario.cidade }}</p>
+
+    {% if usuario.premium %}
+        <p>Bem-Vindo, usuario premium</p>
+    {% else %}
+        <p>Você é um usuario regular</p>
+    {% endif %}
+
+    {% if usuario.idade < 18 %}
+        <p>Você é menor de idade</p>
+    {% elif usuario.idade < 65 %}
+        <p>Aproveite todos os recursos disponíveis</p>
+    {% else %}
+        <p>Obrigado por ser um usuario fiel! Aproveite seu tempo no site.</p>
+    {% endif %}
+</body>
+</html>

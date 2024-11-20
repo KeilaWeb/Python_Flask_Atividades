@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %} 
+    <h2>Bem-Vindo, {{ usuario.nome | upper }}</h2>
+    <p>Idade: {{ usuario.idade }}</p>
+
+    {% if esta_ligado %}
+        <p>Você esta ligado</p>
+    {% else %}
+        <p>Faça login</p>
+    {% endif %}
+
+    <h1>Itens:</h1>
+    <ul>
+        {% for item in itens %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Dicionario de dados</h1>
+    <p>Nome: {{ dado.nome }}</p>
+    <p>Versão: {{ dado.versao}}</p>
+{% enblocck %}
